@@ -1,0 +1,31 @@
+# ~/.config/starship.toml
+
+# Formato personalizado para el prompt
+# Use custom format
+format = '''
+[┌───────────────────>](bold green)
+[│](bold blue)$directory$rust$package
+[└─>](bold red) '''
+
+# Módulo de batería
+[battery]
+full_symbol = '🔋 '  # Cuando la batería está llena
+charging_symbol = '⚡️ '  # Cuando la batería está cargando
+discharging_symbol = '💀 '  # Cuando la batería se está descargando
+disabled = false  # Activa este módulo
+
+# Módulo de hora
+[time]
+format = '[🕒 $time](bold blue)'  # Hora con emoji
+use_12hr = true  # Usa el formato de 12 horas
+disabled = false  # Activa este módulo
+
+# Módulo de Java (si tienes Java instalado)
+[java]
+format = 'v$version'  # Muestra la versión de Java
+disabled = false  # Activa este módulo
+
+# Módulo de nombre de usuario
+[username]
+format = "🤖 [$user]($style)"  # Emoji de robot junto al nombre de usuario
+style = "bold red"  # Color rojo en negrita para el nombre de usuario
